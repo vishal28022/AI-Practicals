@@ -30,14 +30,12 @@ def DFS(graph, node):
 
     while stack:
         s = stack.pop()
-        
-        if s not in visited:
-            visited.append(s)
-            print(s, end=" ")
+        print(s, end = " ")
 
         for neighbour in graph[s]:
             if neighbour not in visited:
                 stack.append(neighbour)
+                visited.append(neighbour)
 
 graph = {}
 while True:
