@@ -47,5 +47,5 @@ while True:
 
 start_node = input("\nEnter the starting node: ") 
 
-BFS(graph, "5")
-DFS(graph, "5")
+BFS(graph, start_node)
+DFS(graph, start_node)
